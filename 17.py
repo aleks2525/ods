@@ -139,7 +139,7 @@ def run_pipeline(subsample: str, weeks: List[str], output_path: str):
     # --- 1. Метаданные
     meta_path = ensure_download(subsample, "metadata/items_metadata.parquet")
     emb_path = ensure_download(subsample, "metadata/item_embeddings.npz")
-    example_path = ensure_download(subsample, "subsamples/example.parquet")
+    example_path = "example.parquet"
 
     item_to_author = load_items_meta(meta_path)
     item_ids, item_vecs = load_embeddings(emb_path, EMB_DIM)
