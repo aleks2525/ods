@@ -436,7 +436,7 @@ def run_pipeline(subsample: str, weeks: List[str], output_path: str):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--subsample", type=str, default="up-0.9_ip-0.9")
-    parser.add_argument("--weeks", nargs="+", default=["week_24", "week_25"])
+    parser.add_argument("--weeks", nargs="+", default=["week_23", "week_24"])
     parser.add_argument("--output", type=str, default=OUTPUT_PATH)
     args = parser.parse_args()
 
